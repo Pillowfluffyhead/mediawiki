@@ -1,0 +1,4 @@
+[submodule "Skins"]
+	path = Skins
+	url = https://github.com/test-wiki/skins
+	branch = master
