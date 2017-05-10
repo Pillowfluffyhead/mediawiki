@@ -116,6 +116,8 @@ wfLoadExtension( 'WikiLove' );
 require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
 wfLoadExtension( 'Thanks' );
 wfLoadExtension( 'OATHAuth' );
+require_once "$IP/extensions/Scribunto/Scribunto.php";
+$wgScribuntoDefaultEngine = 'luastandalone';
 
 # End of automatically generated settings.
 # Add more configuration options below.
