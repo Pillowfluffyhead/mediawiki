@@ -115,7 +115,8 @@ wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'WikiLove' );
 require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
 wfLoadExtension( 'Thanks' );
-wfLoadExtension( 'VisualEditor' );
+wfLoadExtension( 'OATHAuth' );
+
 # End of automatically generated settings.
 # Add more configuration options below.
 //Captcha
@@ -174,18 +175,7 @@ $wgFlaggedRevsStatsAge = false;
 $wgFlaggedRevsProtection = true;
 $wgFlaggedRevsAutoReview = true;
 $wgFlaggedRevsNamespaces = array( NS_MAIN, NS_FILE, NS_TEMPLATE, NS_PROJECT );
-$wgDefaultUserOptions['visualeditor-editor'] = "visualeditor";
-$wgDefaultUserOptions['visualeditor-enable'] = 1;
-$wgVirtualRestConfig['modules']['parsoid'] = array(
-	// URL to the Parsoid instance
-	// Use port 8142 if you use the Debian package
-	'url' => 'http://testwiki.wiki:8142'
-);
-$wgVisualEditorSupportedSkins = array(
-	"refreshed",
-	"vector",
-	"monobook"
-	);
+
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
@@ -194,6 +184,7 @@ $wgDefaultUserOptions['wikieditor-publish'] = 0;
 //User rights
 $wgGroupPermissions['*']['abusefilter-view'] = true;
 $wgGroupPermissions['*']['abusefilter-log'] = true;
+$wgGroupPermissions['*']['oathauth-enable'] = false;
 $wgGroupPermissions['user']['move'] = false;
 $wgGroupPermissions['user']['move-subpages'] = false;
 $wgGroupPermissions['user']['move-rootuserpages'] = false; // can move root userpages
@@ -204,6 +195,7 @@ $wgGroupPermissions['user']['translate'] = true;
 $wgGroupPermissions['user']['translate-messagereview'] = true;
 $wgGroupPermissions['user']['translate-groupreview'] = true;
 $wgGroupPermissions['user']['translate-import'] = true;
+$wgGroupPermissions['sysop']['oathauth-enable'] = true;
 $wgGroupPermissions['sysop']['pagetranslation'] = true;
 $wgGroupPermissions['sysop']['translate-manage'] = true;
 $wgGroupPermissions['autoconfirmed']['move'] = true;
