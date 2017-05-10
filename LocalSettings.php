@@ -162,6 +162,7 @@ wfLoadExtension( 'MediaWikiChat' );
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;
+
 //Other
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
@@ -177,12 +178,14 @@ $wgFlaggedRevsStatsAge = false;
 $wgFlaggedRevsProtection = true;
 $wgFlaggedRevsAutoReview = true;
 $wgFlaggedRevsNamespaces = array( NS_MAIN, NS_FILE, NS_TEMPLATE, NS_PROJECT );
+$wgScribuntoUseCodeEditor = true;
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
 $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 $wgDefaultUserOptions['wikieditor-preview'] = 0;
 $wgDefaultUserOptions['wikieditor-publish'] = 0;
+
 //User rights
 $wgGroupPermissions['*']['abusefilter-view'] = true;
 $wgGroupPermissions['*']['abusefilter-log'] = true;
