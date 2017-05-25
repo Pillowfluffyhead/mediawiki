@@ -118,6 +118,8 @@ wfLoadExtension( 'Thanks' );
 wfLoadExtension( 'OATHAuth' );
 require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luastandalone';
+wfLoadExtension( 'OAuth' );
+$wgMWOAuthSecureTokenTransfer = true;
 
 # End of automatically generated settings.
 # Add more configuration options below.
@@ -244,6 +246,12 @@ $wgGroupPermissions['steward']['stablesettings'] = true;
 $wgGroupPermissions['steward']['hideuser'] = true;
 $wgGroupPermissions['steward']['userrights-interwiki'] = true;
 $wgGroupPermissions['steward']['override-export-depth'] = true;
+$wgGroupPermissions['steward']['mwoauthviewprivate'] = true;
+$wgGroupPermissions['steward']['mwoauthviewsuppressed'] = true;
+$wgGroupPermissions['steward']['mwoauthsuppress'] = true;
+$wgGroupPermissions['steward']['mwoauthmanageconsumer'] = true;
+$wgGroupPermissions['steward']['mwoauthupdateownconsumer'] = true;
+$wgGroupPermissions['steward']['mwoauthproposeconsumer'] = true;
 $wgGroupPermissions['steward']['renameuser'] = true;
 $wgGroupPermissions['steward']['suppressrevision'] = true;
 $wgGroupPermissions['steward']['viewsuppressed'] = true;
