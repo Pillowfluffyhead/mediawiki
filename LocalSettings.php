@@ -120,6 +120,7 @@ require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luastandalone';
 wfLoadExtension( 'OAuth' );
 $wgMWOAuthSecureTokenTransfer = true;
+wfLoadExtension( 'VisualEditor' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
@@ -181,6 +182,20 @@ $wgFlaggedRevsProtection = true;
 $wgFlaggedRevsAutoReview = true;
 $wgFlaggedRevsNamespaces = array( NS_MAIN, NS_FILE, NS_TEMPLATE, NS_PROJECT );
 $wgScribuntoUseCodeEditor = true;
+$wgDefaultUserOptions['visualeditor-enable'] = 1;
+$wgDefaultUserOptions['visualeditor-editor'] = "visualeditor";
+$wgVirtualRestConfig['modules']['parsoid'] = array(
+	// URL to the Parsoid instance
+	// Use port 8142 if you use the Debian package
+	'url' => 'http://testwiki.wiki:8142',
+	// Parsoid "domain", see below (optional)
+	'domain' => 'testwiki.wiki'
+);
+$wgVisualEditorSupportedSkins = array(
+	"vector",
+	"monobook",
+	"refreshed"
+);
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
