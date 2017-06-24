@@ -23,9 +23,9 @@ $wgMetaNamespace = "Test_Wiki";
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
 $wgScriptPath = "";
-#$wgArticlePath = "/wiki/$1";
+$wgArticlePath = "/wiki/$1";
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://testwiki.wiki";
+$wgServer = "https://testwiki.wiki";
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
 ## The URL path to the logo.  Make sure you change this from the default,
