@@ -121,6 +121,8 @@ $wgScribuntoDefaultEngine = 'luasandbox';
 wfLoadExtension( 'OAuth' );
 $wgMWOAuthSecureTokenTransfer = true;
 wfLoadExtension( 'VisualEditor' );
+wfLoadExtension( 'Elastica' );
+require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
 
 # End of automatically generated settings.
 # Add more configuration options below.
@@ -196,6 +198,7 @@ $wgVisualEditorSupportedSkins = array(
 	"monobook",
 	"refreshed"
 );
+$wgSearchType = 'CirrusSearch';
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
