@@ -1,0 +1,12 @@
+[submodule "Skins"]
+	path = Skins
+	url = https://github.com/test-wiki/skins
+	branch = master
+[submodule "Extensions"]
+	path = Extensions
+	url = https://github.com/test-wiki/extensions
+	branch = master
+[submodule "vendor"]
+	path = vendor
+	url = https://github.com/wikimedia/mediawiki-vendor
+	branch = REL1_29
