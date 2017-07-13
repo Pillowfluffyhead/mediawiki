@@ -356,4 +356,4 @@ $wgAutopromoteOnce['onView']['sysop'] = array( "&",
 	array( APCOND_AGE, 0 ),
 );
 
-#$wgDebugLogFile = "$IP/debug-wiki.log";
+require_once "$IP/PrivateSettings.php";
