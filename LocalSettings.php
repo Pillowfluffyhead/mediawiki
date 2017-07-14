@@ -132,10 +132,10 @@ wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'Interwiki' );
 wfLoadExtension( 'Nuke' );
 wfLoadExtension( 'ParserFunctions' );
-#wfLoadExtension( 'PdfHandler' );
+wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'RenameUser' );
 wfLoadExtension( 'SpamBlacklist' );
-wfLoadExtension( 'WikiEdiitor' );
+wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'CheckUser' );
 wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'MassMessage' );
@@ -156,8 +156,8 @@ $wgScribuntoDefaultEngine = 'luasandbox';
 wfLoadExtension( 'OAuth' );
 $wgMWOAuthSecureTokenTransfer = true;
 wfLoadExtension( 'VisualEditor' );
-#wfLoadExtension( 'Elastica' );
-#require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
+wfLoadExtension( 'Elastica' );
+require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
 
 # End of automatically generated settings.
 # Add more configuration options below.
@@ -237,7 +237,7 @@ $wgVisualEditorSupportedSkins = array(
 	"monobook",
 	"refreshed"
 );
-#$wgSearchType = 'CirrusSearch';
+$wgSearchType = 'CirrusSearch';
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
