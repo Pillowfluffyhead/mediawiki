@@ -4,9 +4,9 @@
 	branch = REL1_29
 [submodule "skins"]
 	path = skins
-	url = https://github.com/test-wiki/skins
+	url = https://github.com/Test-Wiki/skins
 	branch = master
 [submodule "extensions"]
 	path = extensions
-	url = https://github.com/test-wiki/extensions
+	url = https://github.com/Test-Wiki/extensions
 	branch = master
