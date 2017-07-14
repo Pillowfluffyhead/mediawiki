@@ -90,7 +90,7 @@ $wgShellLocale = "en_US.utf8";
 ## Set $wgCacheDirectory to a writable directory on the web server
 ## to make your wiki go slightly faster. The directory should not
 ## be publically accessible from the web.
-$wgCacheDirectory = "$IP/cache";
+#$wgCacheDirectory = "$IP/cache";
 $wgUseFileCache = true;
 
 # Site language code, should be one of the list in ./languages/data/Names.php
@@ -156,8 +156,8 @@ $wgScribuntoDefaultEngine = 'luasandbox';
 wfLoadExtension( 'OAuth' );
 $wgMWOAuthSecureTokenTransfer = true;
 wfLoadExtension( 'VisualEditor' );
-wfLoadExtension( 'Elastica' );
-require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
+#wfLoadExtension( 'Elastica' );
+#require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
 
 # End of automatically generated settings.
 # Add more configuration options below.
@@ -237,7 +237,7 @@ $wgVisualEditorSupportedSkins = array(
 	"monobook",
 	"refreshed"
 );
-$wgSearchType = 'CirrusSearch';
+#$wgSearchType = 'CirrusSearch';
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
