@@ -132,7 +132,7 @@ wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'Interwiki' );
 wfLoadExtension( 'Nuke' );
 wfLoadExtension( 'ParserFunctions' );
-wfLoadExtension( 'PdfHandler' );
+#wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'Renameuser' );
 wfLoadExtension( 'SpamBlacklist' );
 wfLoadExtension( 'WikiEditor' );
