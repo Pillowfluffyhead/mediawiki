@@ -119,7 +119,7 @@ $wgDefaultSkin = "refreshed";
 # The following skins were automatically enabled:
 wfLoadSkin( 'CologneBlue' );
 wfLoadSkin( 'Modern' );
-wfLoadSkin( 'MonoBook' );
+wfLoadSkin( 'Monobook' );
 wfLoadSkin( 'Vector' );
 wfLoadSkin( 'Refreshed' );
 
