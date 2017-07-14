@@ -14,7 +14,7 @@
 if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
-
+require_once( "/var/www/html/PrivateSettings.php" );
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
@@ -355,5 +355,3 @@ $wgAutopromoteOnce['onView']['sysop'] = array( "&",
 	array( APCOND_EDITCOUNT, 0 ),
 	array( APCOND_AGE, 0 ),
 );
-
-require_once "$IP/PrivateSettings.php";
