@@ -135,7 +135,7 @@ wfLoadExtension( 'ParserFunctions' );
 #wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'RenameUser' );
 wfLoadExtension( 'SpamBlacklist' );
-wfLoadExtension( 'WikiEdiitor' );
+wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'CheckUser' );
 wfLoadExtension( 'InputBox' );
 wfLoadExtension( 'MassMessage' );
