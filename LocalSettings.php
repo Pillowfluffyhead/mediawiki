@@ -157,9 +157,9 @@ wfLoadExtension( 'OAuth' );
 $wgMWOAuthSecureTokenTransfer = true;
 wfLoadExtension( 'VisualEditor' );
 //times out not sure why -macfan
-#wfLoadExtension( 'Elastica' );
-#require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
-#$wgDisableSearchUpdate = true;
+wfLoadExtension( 'Elastica' );
+require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
+$wgDisableSearchUpdate = true;
 
 # End of automatically generated settings.
 # Add more configuration options below.
