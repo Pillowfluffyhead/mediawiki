@@ -239,8 +239,8 @@ $wgVisualEditorSupportedSkins = array(
 	"monobook",
 	"refreshed"
 );
-#$wgSearchType = 'CirrusSearch';
-#$wgCirrusSearchServers = array( '168.236.102.33' );
+$wgSearchType = 'CirrusSearch';
+$wgCirrusSearchServers = array( '168.236.102.33' );
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
