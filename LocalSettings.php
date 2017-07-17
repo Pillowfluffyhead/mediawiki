@@ -240,7 +240,7 @@ $wgVisualEditorSupportedSkins = array(
 	"refreshed"
 );
 $wgSearchType = 'CirrusSearch';
-$wgCirrusSearchServers = array( '168.236.102.33' );
+$wgCirrusSearchServers = array( 'localhost' );
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
