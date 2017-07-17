@@ -357,4 +357,3 @@ $wgAutopromoteOnce['onView']['sysop'] = array( "&",
 	array( APCOND_EDITCOUNT, 0 ),
 	array( APCOND_AGE, 0 ),
 );
-$wgShowExceptionDetails = true;
