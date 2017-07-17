@@ -152,7 +152,7 @@ require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
 wfLoadExtension( 'Thanks' );
 wfLoadExtension( 'OATHAuth' );
 require_once "$IP/extensions/Scribunto/Scribunto.php";
-$wgScribuntoDefaultEngine = 'luastandalone';
+$wgScribuntoDefaultEngine = 'luasandbox';
 wfLoadExtension( 'OAuth' );
 $wgMWOAuthSecureTokenTransfer = true;
 wfLoadExtension( 'VisualEditor' );
