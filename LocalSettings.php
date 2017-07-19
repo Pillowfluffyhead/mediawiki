@@ -3,7 +3,7 @@
 # installer. If you make manual changes, please keep track in case you
 # need to recreate them later.
 #
-# See includees/DefaultSettings.php for all configurable settings
+# See includes/DefaultSettings.php for all configurable settings
 # and their default values, but don't forget to make changes in _this_
 # file, not there.
 #
@@ -52,7 +52,6 @@ $wgPasswordSender = "testwiki.wiki.staff@gmail.com";
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
 $wgEmailAuthentication = true;
-
 
 # MySQL specific settings
 $wgDBprefix = "mw_";
@@ -127,47 +126,48 @@ wfLoadSkin( 'Refreshed' );
 # wfLoadExtensions('ExtensionName');
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
+wfLoadExtension( 'AbuseFilter' );
+wfLoadExtension( 'AutomaticBoardWelcome' );
+require_once "$IP/extensions/CodeEditor/CodeEditor.php";
+wfLoadExtension( 'CheckUser' );
+require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
 wfLoadExtension( 'ConfirmEdit' );
+wfLoadExtension( 'Echo' );
+wfLoadExtension( 'Elastica' );
+require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
 wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'Interwiki' );
+wfLoadExtension( 'InputBox' );
+require_once "$IP/extensions/MaintenanceShell/MaintenanceShell.php";
+wfLoadExtension( 'MassMessage' );
 wfLoadExtension( 'Nuke' );
+wfLoadExtension( 'OAuth' );
+$wgMWOAuthSecureTokenTransfer = true;
+wfLoadExtension( 'OATHAuth' );
 wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'RenameUser' );
-wfLoadExtension( 'SpamBlacklist' );
-wfLoadExtension( 'WikiEditor' );
-wfLoadExtension( 'CheckUser' );
-wfLoadExtension( 'InputBox' );
-wfLoadExtension( 'MassMessage' );
-require_once "$IP/extensions/CodeEditor/CodeEditor.php";
-require_once "$IP/extensions/MaintenanceShell/MaintenanceShell.php";
-$EXT = "$IP/extensions";
-require_once "$EXT/Translate/Translate.php";
-wfLoadExtension( 'UniversalLanguageSelector' );
-require_once "$IP/extensions/Echo/Echo.php";
-wfLoadExtension( 'AutomaticBoardWelcome' );
-wfLoadExtension( 'AbuseFilter' );
-wfLoadExtension( 'WikiLove' );
-require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
-wfLoadExtension( 'Thanks' );
-wfLoadExtension( 'OATHAuth' );
 require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luasandbox';
-wfLoadExtension( 'OAuth' );
-$wgMWOAuthSecureTokenTransfer = true;
+wfLoadExtension( 'SpamBlacklist' );
+require_once "$EXT/Translate/Translate.php";
+wfLoadExtension( 'Thanks' );
+wfLoadExtension( 'UniversalLanguageSelector' );
 wfLoadExtension( 'VisualEditor' );
-wfLoadExtension( 'Elastica' );
-require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
+wfLoadExtension( 'WikiEditor' );
+wfLoadExtension( 'WikiLove' );
+$EXT = "$IP/extensions";
+
 $wgDisableSearchUpdate = true;
 
 # End of automatically generated settings.
 # Add more configuration options below.
 
-//Captcha
+// Captcha
 wfLoadExtension('ConfirmEdit/ReCaptchaNoCaptcha' );
 $wgCaptchaClass = 'ReCaptchaNoCaptcha';
 
-//SocialProfile
+// SocialProfile
 require_once("$IP/extensions/SocialProfile/SocialProfile.php");
 require_once("$IP/extensions/SocialProfile/UserStats/EditCount.php"); // Necessary edit counter
 // The actual user level definitions -- key is simple: 'Level name' => points needed
@@ -202,13 +202,13 @@ $wgUserStatsPointValues['points_winner_monthly'] = 0; // Points awarded for havi
 $wgUserStatsPointValues['user_image'] = 1000; // Points awarded for adding your first avatar
 $wgNamespacesForEditPoints = array( 0 ); // Array of namespaces that can earn you points. Use numerical keys. Default is 0 -- only main namespace edits can earn a user points.
 
-//Chat
+// Chat
 wfLoadExtension( 'MediaWikiChat' );
 	$wgChatKicks = true;
 	$wgChatMeCommand = true;
 	$wgChatLinkUsernames = true;
 
-//Other
+// Other
 $wgAllowUserCss = true;
 $wgAllowUserJs = true;
 $wgAllowCopyUploads = true;
@@ -247,7 +247,7 @@ $wgDefaultUserOptions['usebetatoolbar-cgd'] = 1;
 $wgDefaultUserOptions['wikieditor-preview'] = 0;
 $wgDefaultUserOptions['wikieditor-publish'] = 0;
 
-//User rights
+// User rights
 $wgGroupPermissions['*']['abusefilter-view'] = true;
 $wgGroupPermissions['*']['abusefilter-log'] = true;
 $wgGroupPermissions['*']['oathauth-enable'] = false;
@@ -352,7 +352,7 @@ $wgGroupPermissions['sysadmin']['steward'] = true;
 $wgRevokePermissions['exampleuser']['editmyoptions'] = true;
 $wgRevokePermissions['exampleuser']['editmyprivateinfo'] = true;
 
-//Autopromote sysops
+// Autopromote sysops
 $wgAutopromoteOnce['onView']['sysop'] = array( "&",
 	array( APCOND_EDITCOUNT, 0 ),
 	array( APCOND_AGE, 0 ),
