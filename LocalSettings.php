@@ -150,13 +150,13 @@ wfLoadExtension( 'RenameUser' );
 require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luasandbox';
 wfLoadExtension( 'SpamBlacklist' );
+$EXT = "$IP/extensions";
 require_once "$EXT/Translate/Translate.php";
 wfLoadExtension( 'Thanks' );
 wfLoadExtension( 'UniversalLanguageSelector' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'WikiLove' );
-$EXT = "$IP/extensions";
 
 $wgDisableSearchUpdate = true;
 
