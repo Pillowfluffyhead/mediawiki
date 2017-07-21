@@ -117,19 +117,19 @@ $wgDefaultSkin = "refreshed";
 
 # Enabled skins.
 # The following skins were automatically enabled:
-wfLoadSkins ( [ 
+wfLoadSkins ( array( 
 'CologneBlue'
 'Modern',
 'MonoBook',
 'Vector' ,
 'Refreshed',
-] ):
+) ):
 
 # Enabled extensions. Most of the extensions are enabled by adding
 # wfLoadExtensions('ExtensionName');
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
-wfLoadExtensions( [
+wfLoadExtensions( array(
 'AbuseFilter',
 'AutomaticBoardWelcome',
 'CheckUser',
@@ -151,7 +151,7 @@ wfLoadExtensions( [
 'VisualEditor',
 'WikiEditor',
 'WikiLove',
-] );
+) );
 require_once "$IP/extensions/CodeEditor/CodeEditor.php";
 $wgMWOAuthSecureTokenTransfer = true;
 require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
