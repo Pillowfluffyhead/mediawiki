@@ -149,7 +149,7 @@ wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'RenameUser' );
 require_once "$IP/extensions/Scribunto/Scribunto.php";
-$wgScribuntoDefaultEngine = 'luasandbox';
+$wgScribuntoDefaultEngine = 'luastandalone';
 wfLoadExtension( 'SpamBlacklist' );
 require_once "$IP/extensions/Translate/Translate.php";
 wfLoadExtension( 'Thanks' );
@@ -157,8 +157,6 @@ wfLoadExtension( 'UniversalLanguageSelector' );
 wfLoadExtension( 'VisualEditor' );
 wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'WikiLove' );
-
-$wgDisableSearchUpdate = true;
 
 # End of automatically generated settings.
 # Add more configuration options below.
