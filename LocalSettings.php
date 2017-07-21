@@ -123,7 +123,7 @@ wfLoadSkins( array(
 	'MonoBook',
 	'Vector' ,
 	'Refreshed',
-) ):
+) );
 
 # Enabled extensions. Most of the extensions are enabled by adding
 # wfLoadExtensions('ExtensionName');
