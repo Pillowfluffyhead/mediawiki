@@ -149,7 +149,7 @@ wfLoadExtension( 'ParserFunctions' );
 wfLoadExtension( 'PdfHandler' );
 wfLoadExtension( 'RenameUser' );
 require_once "$IP/extensions/Scribunto/Scribunto.php";
-$wgScribuntoDefaultEngine = 'luastandalone';
+$wgScribuntoDefaultEngine = 'luasandbox';
 wfLoadExtension( 'SpamBlacklist' );
 require_once "$IP/extensions/Translate/Translate.php";
 wfLoadExtension( 'Thanks' );
