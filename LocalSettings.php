@@ -117,44 +117,48 @@ $wgDefaultSkin = "refreshed";
 
 # Enabled skins.
 # The following skins were automatically enabled:
-wfLoadSkin( 'CologneBlue' );
-wfLoadSkin( 'Modern' );
-wfLoadSkin( 'MonoBook' );
-wfLoadSkin( 'Vector' );
-wfLoadSkin( 'Refreshed' );
+wfLoadSkins ( [ 
+'CologneBlue'
+'Modern',
+'MonoBook',
+'Vector' ,
+'Refreshed',
+] ):
 
 # Enabled extensions. Most of the extensions are enabled by adding
 # wfLoadExtensions('ExtensionName');
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
-wfLoadExtension( 'AbuseFilter' );
-wfLoadExtension( 'AutomaticBoardWelcome' );
+wfLoadExtensions( [
+'AbuseFilter',
+'AutomaticBoardWelcome',
+'CheckUser',
+'ConfirmEdit',
+'Echo',
+'Gadgets',
+'Interwiki',
+'InputBox',
+'MassMessage',
+'Nuke',
+'OAuth',
+'OATHAuth',
+'ParserFunctions',
+'PdfHandler',
+'RenameUser',
+'SpamBlacklist',
+'Thanks',
+'UniversalLanguageSelector',
+'VisualEditor',
+'WikiEditor',
+'WikiLove',
+] );
 require_once "$IP/extensions/CodeEditor/CodeEditor.php";
-wfLoadExtension( 'CheckUser' );
-wfLoadExtension( 'ConfirmEdit' );
-wfLoadExtension( 'Echo' );
-require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
-wfLoadExtension( 'Gadgets' );
-wfLoadExtension( 'Interwiki' );
-wfLoadExtension( 'InputBox' );
-require_once "$IP/extensions/MaintenanceShell/MaintenanceShell.php";
-wfLoadExtension( 'MassMessage' );
-wfLoadExtension( 'Nuke' );
-wfLoadExtension( 'OAuth' );
 $wgMWOAuthSecureTokenTransfer = true;
-wfLoadExtension( 'OATHAuth' );
-wfLoadExtension( 'ParserFunctions' );
-wfLoadExtension( 'PdfHandler' );
-wfLoadExtension( 'RenameUser' );
+require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
+require_once "$IP/extensions/MaintenanceShell/MaintenanceShell.php";
 require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luasandbox';
-wfLoadExtension( 'SpamBlacklist' );
 require_once "$IP/extensions/Translate/Translate.php";
-wfLoadExtension( 'Thanks' );
-wfLoadExtension( 'UniversalLanguageSelector' );
-wfLoadExtension( 'VisualEditor' );
-wfLoadExtension( 'WikiEditor' );
-wfLoadExtension( 'WikiLove' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
