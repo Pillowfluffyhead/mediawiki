@@ -118,11 +118,11 @@ $wgDefaultSkin = "refreshed";
 # Enabled skins.
 # The following skins were automatically enabled:
 wfLoadSkins( array( 
-'CologneBlue'
-'Modern',
-'MonoBook',
-'Vector' ,
-'Refreshed',
+	'CologneBlue'
+	'Modern',
+	'MonoBook',
+	'Vector' ,
+	'Refreshed',
 ) ):
 
 # Enabled extensions. Most of the extensions are enabled by adding
@@ -130,27 +130,27 @@ wfLoadSkins( array(
 # to LocalSettings.php. Check specific extension documentation for more details.
 # The following extensions were automatically enabled:
 wfLoadExtensions( array(
-'AbuseFilter',
-'AutomaticBoardWelcome',
-'CheckUser',
-'ConfirmEdit',
-'Echo',
-'Gadgets',
-'Interwiki',
-'InputBox',
-'MassMessage',
-'Nuke',
-'OAuth',
-'OATHAuth',
-'ParserFunctions',
-'PdfHandler',
-'RenameUser',
-'SpamBlacklist',
-'Thanks',
-'UniversalLanguageSelector',
-'VisualEditor',
-'WikiEditor',
-'WikiLove',
+	'AbuseFilter',
+	'AutomaticBoardWelcome',
+	'CheckUser',
+	'ConfirmEdit',
+	'Echo',
+	'Gadgets',
+	'Interwiki',
+	'InputBox',
+	'MassMessage',
+	'Nuke',
+	'OAuth',
+	'OATHAuth',
+	'ParserFunctions',
+	'PdfHandler',
+	'RenameUser',
+	'SpamBlacklist',
+	'Thanks',
+	'UniversalLanguageSelector',
+	'VisualEditor',
+	'WikiEditor',
+	'WikiLove',
 ) );
 require_once "$IP/extensions/CodeEditor/CodeEditor.php";
 $wgMWOAuthSecureTokenTransfer = true;
