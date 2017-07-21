@@ -30,7 +30,7 @@ $wgScriptPath = "";
 $wgArticlePath = "/wiki/$1";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://testwiki.wiki";
+$wgServer = "https://testwiki.wiki";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -71,7 +71,7 @@ $wgMemCachedServers = [];
 ## is writable, then set this to true:
 $wgEnableUploads = true;
 $wgUseImageMagick = true;
-#$wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgImageMagickConvertCommand = "/usr/bin/convert";
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = true;
