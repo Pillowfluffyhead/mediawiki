@@ -131,10 +131,8 @@ wfLoadExtension( 'AbuseFilter' );
 wfLoadExtension( 'AutomaticBoardWelcome' );
 require_once "$IP/extensions/CodeEditor/CodeEditor.php";
 wfLoadExtension( 'CheckUser' );
-require_once( "$IP/extensions/CirrusSearch/CirrusSearch.php" );
 wfLoadExtension( 'ConfirmEdit' );
 wfLoadExtension( 'Echo' );
-wfLoadExtension( 'Elastica' );
 require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
 wfLoadExtension( 'Gadgets' );
 wfLoadExtension( 'Interwiki' );
@@ -236,8 +234,6 @@ $wgVisualEditorSupportedSkins = array(
 	"monobook",
 	"refreshed"
 );
-$wgSearchType = 'CirrusSearch';
-$wgCirrusSearchServers = array( 'localhost' );
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
