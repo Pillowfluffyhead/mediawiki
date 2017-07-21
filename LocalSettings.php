@@ -30,7 +30,7 @@ $wgScriptPath = "";
 $wgArticlePath = "/wiki/$1";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://testwiki.wiki";
+$wgServer = "http://testwiki.wiki";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -89,7 +89,7 @@ $wgShellLocale = "en_US.utf8";
 ## Set $wgCacheDirectory to a writable directory on the web server
 ## to make your wiki go slightly faster. The directory should not
 ## be publically accessible from the web.
-$wgCacheDirectory = "$IP/cache";
+#$wgCacheDirectory = "$IP/cache";
 $wgUseFileCache = true;
 
 # Site language code, should be one of the list in ./languages/data/Names.php
