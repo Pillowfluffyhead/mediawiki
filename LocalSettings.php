@@ -133,7 +133,7 @@ wfLoadExtensions( array(
 	'AbuseFilter',
 	'AutomaticBoardWelcome',
 	'CheckUser',
-	'CodeEditor",
+	'CodeEditor',
 	'ConfirmEdit',
 	'Echo',
 	'Gadgets',
