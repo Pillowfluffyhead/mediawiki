@@ -133,11 +133,13 @@ wfLoadExtensions( array(
 	'AbuseFilter',
 	'AutomaticBoardWelcome',
 	'CheckUser',
+	'CodeEditor",
 	'ConfirmEdit',
 	'Echo',
 	'Gadgets',
 	'Interwiki',
 	'InputBox',
+	'MaintenanceShell',
 	'MassMessage',
 	'Nuke',
 	'OAuth',
@@ -152,10 +154,8 @@ wfLoadExtensions( array(
 	'WikiEditor',
 	'WikiLove',
 ) );
-require_once "$IP/extensions/CodeEditor/CodeEditor.php";
 $wgMWOAuthSecureTokenTransfer = true;
 require_once("$IP/extensions/FlaggedRevs/FlaggedRevs.php");
-require_once "$IP/extensions/MaintenanceShell/MaintenanceShell.php";
 require_once "$IP/extensions/Scribunto/Scribunto.php";
 $wgScribuntoDefaultEngine = 'luasandbox';
 require_once "$IP/extensions/Translate/Translate.php";
