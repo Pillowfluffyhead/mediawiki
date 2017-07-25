@@ -135,6 +135,7 @@ wfLoadExtensions( array(
 	'CheckUser',
 	'CodeEditor',
 	'ConfirmEdit',
+	'DismissableSiteNotice',
 	'Echo',
 	'Gadgets',
 	'Interwiki',
