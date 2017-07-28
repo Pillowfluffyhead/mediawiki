@@ -325,6 +325,7 @@ $wgGroupPermissions['bureaucrat']['giftadmin'] = true;
 $wgGroupPermissions['steward']['updatepoints'] = true;
 $wgGroupPermissions['bureaucrat']['userboard-delete'] = true;
 $wgGroupPermissions['steward']['generatetopusersreport'] = true;
+$wgGroupPermissions['bureaucrat']['checkuser-limited'] = true;
 $wgAddGroups['steward'] = array( 'sysop', 'bot', 'editor', 'reviewer', 'autoreview', 'patroller', 'chatmod', 'blockedfromchat', 'steward', 'bureaucrat', 'checkuser', 'staff', 'exampleuser');
 $wgRemoveGroups['steward'] = array( 'sysop', 'bot', 'editor', 'reviewer', 'autoreview', 'patroller', 'chatmod', 'blockedfromchat', 'steward', 'bureaucrat', 'checkuser', 'staff', 'exampleuser');
 $wgAddGroups['bureaucrat'] = array( 'sysop', 'bot', 'editor', 'reviewer', 'autoreview', 'patroller', 'chatmod', 'blockedfromchat', 'bureaucrat');
