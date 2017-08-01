@@ -239,12 +239,6 @@ $wgVisualEditorSupportedSkins = array(
 	"monobook",
 	"refreshed"
 );
-$wgTranslateTranslationServices['TTMServer'] = [
-	'database' => false, // Passed to wfGetDB
-	'cutoff' => 0.75,
-	'type' => 'ttmserver',
-	'public' => true,
-];
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
