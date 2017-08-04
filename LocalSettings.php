@@ -288,7 +288,10 @@ $wgGroupPermissions['sysop']['review'] = true;
 $wgGroupPermissions['sysop']['validate'] = true;
 $wgGroupPermissions['sysop']['nuke'] = false;
 $wgGroupPermissions['bureaucrat']['nuke'] = true;
+$wgGroupPermissions['sysop']['unblockself'] = false;
+$wgGroupPermissions['bureaucrat']['unblockself'] = true;
 $wgGroupPermissions['steward']['unblockself'] = true;
+$wgGroupPermissions['bureaucrat']['block'] = true;
 $wgGroupPermissions['steward']['block'] = true;
 $wgGroupPermissions['steward']['abusefilter-view-private'] = true;
 $wgGroupPermissions['steward']['abusefilter-log-private'] = true;
@@ -351,6 +354,7 @@ $wgGroupPermissions['sysadmin']['hideuser'] = true;
 $wgGroupPermissions['sysadmin']['steward'] = true;
 $wgRevokePermissions['exampleuser']['editmyoptions'] = true;
 $wgRevokePermissions['exampleuser']['editmyprivateinfo'] = true;
+
 
 // Autopromote sysops
 $wgAutopromoteOnce['onView']['sysop'] = array( "&",
