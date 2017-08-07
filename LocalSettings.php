@@ -359,10 +359,3 @@ $wgGroupPermissions['sysadmin']['hideuser'] = true;
 $wgGroupPermissions['sysadmin']['steward'] = true;
 $wgRevokePermissions['exampleuser']['editmyoptions'] = true;
 $wgRevokePermissions['exampleuser']['editmyprivateinfo'] = true;
-
-
-// Autopromote sysops
-$wgAutopromoteOnce['onView']['sysop'] = array( "&",
-	array( APCOND_EDITCOUNT, 0 ),
-	array( APCOND_AGE, 0 ),
-);
