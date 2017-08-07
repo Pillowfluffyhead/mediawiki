@@ -247,6 +247,7 @@ $wgDefaultUserOptions['wikieditor-preview'] = 0;
 $wgDefaultUserOptions['wikieditor-publish'] = 0;
 
 // User rights
+$wgGroupPermissions['*']['createaccount'] = false;
 $wgGroupPermissions['*']['abusefilter-view'] = true;
 $wgGroupPermissions['*']['abusefilter-log'] = true;
 $wgGroupPermissions['*']['oathauth-enable'] = false;
