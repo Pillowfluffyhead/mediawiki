@@ -309,6 +309,7 @@ $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['steward']['validate'] = true;
 $wgGroupPermissions['steward']['review'] = true;
 $wgGroupPermissions['steward']['autoreview'] = true;
+$wgGroupPermissions['staff']['unblockable'] = false;
 $wgGroupPermissions['steward']['unblockable'] = true;
 $wgGroupPermissions['steward']['stablesettings'] = true;
 $wgGroupPermissions['steward']['hideuser'] = true;
