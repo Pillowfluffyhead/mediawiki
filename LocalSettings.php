@@ -149,6 +149,7 @@ wfLoadExtensions( array(
 	'PdfHandler',
 	'RenameUser',
 	'SpamBlacklist',
+	'StaffPowers',
 	'Thanks',
 	'UniversalLanguageSelector',
 	'VisualEditor',
@@ -239,6 +240,7 @@ $wgVisualEditorSupportedSkins = array(
 	"monobook",
 	"refreshed"
 );
+$wgStaffPowersShoutWikiMessages = false;
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
@@ -307,6 +309,7 @@ $wgGroupPermissions['bureaucrat']['renameuser'] = false;
 $wgGroupPermissions['steward']['validate'] = true;
 $wgGroupPermissions['steward']['review'] = true;
 $wgGroupPermissions['steward']['autoreview'] = true;
+$wgGroupPermissions['steward']['unblockable'] = true;
 $wgGroupPermissions['steward']['stablesettings'] = true;
 $wgGroupPermissions['steward']['hideuser'] = true;
 $wgGroupPermissions['steward']['userrights-interwiki'] = true;
@@ -349,6 +352,7 @@ $wgGroupPermissions['sysadmin']['editothersprofiles'] = true;
 $wgGroupPermissions['sysadmin']['avatarremove'] = true;
 $wgGroupPermissions['sysadmin']['updatepoints'] = true;
 $wgGroupPermissions['sysadmin']['generatetopusersreport'] = true;
+$wgGroupPermissions['sysadmin']['unblockable'] = true;
 $wgGroupPermissions['sysadmin']['userrights'] = true;
 $wgGroupPermissions['bureaucrat']['userrights'] = false;
 $wgGroupPermissions['sysadmin']['suppressrevision'] = true;
