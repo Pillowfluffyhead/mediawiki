@@ -236,11 +236,6 @@ $wgVirtualRestConfig['modules']['parsoid'] = array(
 	// Parsoid "domain", see below (optional)
 	'domain' => 'testwiki.wiki'
 );
-$wgVisualEditorSupportedSkins = array(
-	"vector",
-	"monobook",
-	"refreshed"
-);
 $wgStaffPowersShoutWikiMessages = false;
 
 // WikiEditor
