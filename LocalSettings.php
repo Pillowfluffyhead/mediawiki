@@ -152,6 +152,7 @@ wfLoadExtensions( array(
 	'SpamBlacklist',
 	'StaffPowers',
 	'Thanks',
+	'TitleBlacklist',
 	'UniversalLanguageSelector',
 	'VisualEditor',
 	'WikiEditor',
@@ -238,6 +239,12 @@ $wgVirtualRestConfig['modules']['parsoid'] = array(
 	'domain' => 'testwiki.wiki'
 );
 $wgStaffPowersShoutWikiMessages = false;
+$wgTitleBlacklistSources = array(
+  array(
+    'type' => 'localpage',
+    'src'  => 'MediaWiki:Titleblacklist'
+  )
+);
 
 // WikiEditor
 $wgDefaultUserOptions['usebetatoolbar'] = 1;
