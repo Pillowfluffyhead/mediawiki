@@ -153,6 +153,7 @@ wfLoadExtensions( array(
 	'StaffPowers',
 	'Thanks',
 	'TitleBlacklist',
+	'TorBlock',
 	'UniversalLanguageSelector',
 	'VisualEditor',
 	'WikiEditor',
@@ -266,6 +267,8 @@ $wgGroupPermissions['user']['translate'] = true;
 $wgGroupPermissions['user']['translate-messagereview'] = true;
 $wgGroupPermissions['user']['translate-groupreview'] = true;
 $wgGroupPermissions['user']['translate-import'] = true;
+$wgGroupPermissions['user']['torunblocked'] = false;
+$wgGroupPermissions['bureaucrat']['torunblocked'] = true;
 $wgGroupPermissions['sysop']['oathauth-enable'] = true;
 $wgGroupPermissions['sysop']['pagetranslation'] = true;
 $wgGroupPermissions['sysop']['translate-manage'] = true;
